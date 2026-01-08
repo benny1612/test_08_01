@@ -13,5 +13,4 @@ genarate3flights(arr = 3) {
     }
   }
 }
-// const a1 = new AirportSystem("sds");
-// console.log(a1.flights[0].Tickets_list);
+
