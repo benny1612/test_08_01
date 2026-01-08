@@ -22,9 +22,6 @@ export class Flight {
     this.genaratevipTicket();
   }
 
-  add_owner(name) {
-    this.owner_name = name;
-  }
   genarateRegularTicket(
     arr = this.Maximum_number_of_passengers -
       this.Maximum_number_of_passengers / 10

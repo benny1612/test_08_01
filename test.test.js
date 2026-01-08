@@ -16,13 +16,13 @@ test.describe("tests airportsystem with Not enough money ", () => {
       const a = new AirportSystem("nn");
       const s = new StudentPassenger("a", 1, 1000, "fu");
       const r = new RegularPassenger("cvc", 1, 1000, "dfdfds", false);
-      s.buyTicket(a)
-      r.buyTicket(a)
+      s.buyTicket(a);
+      r.buyTicket(a);
 
-      assert.strictEqual(a.flights[0].Tickets_list[1].OwnerName,"a");
-      assert.strictEqual(a.flights[0].Tickets_list.OwnerName,"cvc");
-      assert.strictEqual(s.Amount_of_money,955);
-      assert.strictEqual(r.Amount_of_money,952.5);
+      assert.strictEqual(a.flights[0].Tickets_list[1].OwnerName, "a");
+      assert.strictEqual(a.flights[0].Tickets_list.OwnerName, "cvc");
+      assert.strictEqual(s.Amount_of_money, 955);
+      assert.strictEqual(r.Amount_of_money, 952.5);
     });
   });
 });
