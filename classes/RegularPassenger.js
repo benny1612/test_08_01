@@ -14,9 +14,9 @@ export class RegularPassenger {
         this.Amount_of_money >= regularPrice - regularPrice / 20 ||
         this.Amount_of_money >= vipPrice - vipPrice / 15
       ) {
-        this.Amount_of_money >= regularPrice - regularPrice / 15
+        this.Amount_of_money >= regularPrice - regularPrice / 15;
         airport.flights[0].Tickets_list.OwnerName = this.name;
-        
+
         return true;
       } else {
         return false;
@@ -26,7 +26,7 @@ export class RegularPassenger {
         this.Amount_of_money >= regularPrice ||
         this.Amount_of_money >= vipPrice
       ) {
-        this.Amount_of_money >= regularPrice - regularPrice / 15
+        this.Amount_of_money >= regularPrice - regularPrice / 15;
         airport.flights[0].Tickets_list.OwnerName = this.name;
         return true;
       } else {
