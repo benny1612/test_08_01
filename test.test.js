@@ -16,7 +16,9 @@ test.describe("tests airportsystem", () => {
       const a = new AirportSystem("nn");
       const s = new StudentPassenger("a", 1, 1000, "fu");
       const r = new RegularPassenger("cvc", 1, 1000, "dfdfds", false);
-      assert.strictEqual(s.buyTicket(a), true);
+      s.buyTicket(a)
+
+      assert.strictEqual(a.flights[0].Tickets_list.OwnerName,"a");
       assert.strictEqual(r.buyTicket(a), true);
     });
   });
