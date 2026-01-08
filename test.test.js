@@ -3,7 +3,7 @@ import assert from "node:assert";
 import { AirportSystem } from "./classes/AirportSystem.js";
 import { StudentPassenger } from "./classes/StudentPassenger.js";
 import { RegularPassenger } from "./classes/RegularPassenger.js";
-test.describe("tests airportsystem", () => {
+test.describe("tests airportsystem with Not enough money ", () => {
   test("Not enough money", () => {
     const a = new AirportSystem("nn");
     const s = new StudentPassenger("a", 1, 0, "fu");
@@ -11,7 +11,7 @@ test.describe("tests airportsystem", () => {
     assert.strictEqual(s.buyTicket(a), false);
     assert.strictEqual(r.buyTicket(a), false);
   });
-  test.describe("tests airportsystem", () => {
+  test.describe("tests airportsystem with enough money", () => {
     test("enough money", () => {
       const a = new AirportSystem("nn");
       const s = new StudentPassenger("a", 1, 1000, "fu");
