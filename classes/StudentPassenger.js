@@ -11,7 +11,7 @@ export class StudentPassenger {
     const price = airport.flights[0].Regular_ticket_price;
     if (this.Amount_of_money >= price - price / 10) {
       this.Amount_of_money -= price - price / 10;
-      airport.flights[0].Tickets_list.OwnerName = this.name;
+      airport.flights[0].Tickets_list[1].OwnerName = this.name;
       return true;
     } else {
       return false;
